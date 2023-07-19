@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: noticias-configmap
+data:
+  IP_SISTEMA: http://<IP>:30090
+  # change only IP, dont change the port!

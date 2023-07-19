@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: noticias
+  labels:
+    app: noticias
+spec:
+  containers:
+    - name: container-noticias
+      image: aluracursos/portal-noticias:1
+      ports:
+        - containerPort: 80
+      envFrom:
+        - configMapRef:
+            name: noticias-configmap
